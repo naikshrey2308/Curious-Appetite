@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Labrada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    font-family: "Jost", "Labrada";
+    --primary: #357960;
+    --primary-selection: #35796066;
+    --primary-trans: #357960BB;
+    --primary-hover: #35796033;
+    --primary-hover-chat: #3579601e;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+::selection {
+    background: var(--primary-selection);
+}
+
+.link-primary {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--primary);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
+.br-50-p {
+    border-radius: 50%;
+}
+
+.br-50 {
+    border-radius: 50px;
+}
+
+.br-50-l {
+    border-radius: 50px 0px 0px 50px;
+}
+
+.br-50-r {
+    border-radius: 0px 50px 50px 0px;
+}
+
+.br-5 {
+    border-radius: 5px;
+}
+
+.btn:focus, .btn:active, .form-control:focus, .form-control:active {
+    box-shadow: none;
+}
+
+.valid-input, .valid-input:focus, .valid-input:active {
+    border: 1px solid var(--bs-success);
+}
+
+.invalid-input, .invalid-input:focus, .invalid-input:active {
+    border: 1px solid var(--bs-danger);
+}
+
+.dropdown-item:focus {
+    background-color: var(--primary-selection) !important;
+    /* color: var(--primary); */
+}
+
+.circle-img {
+    border-radius: 50%;
+    object-fit: contain !important;
+}
+
+.border-primary {
+    border-color: var(--primary) !important;
+}
+
+.font-cursive {
+    font-family: "Dancing Script";
+}
+
+.accordion-button[aria-expanded=true] {
+    background-color: var(--primary);
+    color: white;
+}
+
+.accordion-button[aria-expanded=true]::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFFFFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button[aria-expanded=true] .bulb {
+    background-color: white !important;
+    color: var(--primary) !important;
+}
+
+.heading-underline {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-selection);
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+
+.hover-btn:hover {
+    background-color: #d3d3d3a6;
+    transition: all 0.3s;
+}
+
+.dropdown-toggle::after {
+    vertical-align: middle !important;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary-hover);
+}
+
+.searched-recipe-block:hover {
+    /* background-color: #d3d3d34d; */
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.recipe-img {
+    position: relative;
+    filter: brightness(75%);
+}
+
+.w-33 {
+    width: 33.33%;
+}
+
+.font-labrada {
+    font-family: "Labrada";
+}
+
+.user-pill:hover {
+    background-color: var(--primary-hover);
+}
+
+.user-pill-more::before {
+    position: absolute;
+    content: "";
+    border-width: 0px 14px 14px 14px;
+    border-style: solid;
+    border-color: transparent transparent lightgrey transparent;
+    top: -14px;
+    left: 0;
+}
+
+.user-pill-more {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+.bg-selection {
+    background-color: #35796011;
+}
+
+.searched-recipe-block .action-icons {
+    z-index: 1002;
+    margin-top: -12px;
+    margin-right: 10px;
+    display: none;
+    /* background-color: var(--primary-trans); */
+}
+
+.searched-recipe-block:hover .action-icons {
+    z-index: 1002;
+    display: block;
+    margin-top: -12px;
+    margin-right: 10px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    transition: all 0.3s;
+    /* background-color: lightgrey; */
+}
+
+.searched-recipe-block:hover .action-icon {
+    animation: slideInUp 0.3s ease-out forwards;
+    background-color: lightgrey;
+    opacity: 85%;
+    padding: 10px;
+}
+
+.searched-recipe-block:hover img {
+    filter: brightness(25%);
+    transition: all 0.3s;
+}
